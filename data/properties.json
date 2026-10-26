@@ -1,0 +1,1429 @@
+[
+  {
+    "slug": "355-tompkins-avenue",
+    "status": "Under Contract",
+    "title": "355 Tompkins Avenue",
+    "location": "Bedford-Stuyvesant, Brooklyn",
+    "price": "$3,500,000",
+    "images": [
+      {
+        "src": "/media/e5ae269f-0b37-486b-8096-d62ede82fdb9.jpg",
+        "alt": "Brick corner building with bay windows and storefronts beside a tree-lined intersection."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "355 Tompkins Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 0,
+    "hidden": false
+  },
+  {
+    "slug": "153-159-n-kinderkamack-road",
+    "status": "For Sale",
+    "title": "153-159 N Kinderkamack Road",
+    "location": "Montvale, New Jersey",
+    "price": "$2,800,000",
+    "images": [
+      {
+        "src": "/media/8ee41424-aa83-4cda-911c-49c57eec5d52.jpg",
+        "alt": "Bergen Supply storefront in a curved red-brick commercial building with a dark awning and large windows."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "153-159 N Kinderkamack Road  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 1,
+    "hidden": false
+  },
+  {
+    "slug": "191-bond-street",
+    "status": "For Sale",
+    "title": "191 Bond Street",
+    "location": "Boerum Hill, New York",
+    "price": "$2,700,000",
+    "images": [
+      {
+        "src": "/media/jju1gr1y8ps9qxtwvqsj.jpg",
+        "alt": "191 Bond Street "
+      }
+    ],
+    "lat": "40.6848689",
+    "lng": "-73.9844722",
+    "schedule_tour": true,
+    "meta_title": "191 Bond Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 2,
+    "hidden": false
+  },
+  {
+    "slug": "8230-frankford-avenue",
+    "status": "For Sale",
+    "title": "8230 Frankford Avenue",
+    "location": "Philadelphia, Pennsylvania",
+    "price": "$1,800,000",
+    "images": [
+      {
+        "src": "/media/e6173e0e-6656-45ef-bf4b-3cf623760eaa.jpg",
+        "alt": "Retail strip with blue awnings, shuttered storefronts, and a parking lot."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "8230 Frankford Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 3,
+    "hidden": false
+  },
+  {
+    "slug": "3839-danbury-road",
+    "status": "Under Contract",
+    "title": "3839 Danbury Road",
+    "location": "Brewster, New York",
+    "price": "$1,750,000",
+    "images": [
+      {
+        "src": "/media/5bea7d31-6ccc-4d42-b620-c7be557ce292.jpg",
+        "alt": "Two-story commercial building with corrugated siding, a green entrance awning, and an accessibility ramp."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "3839 Danbury Road  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 4,
+    "hidden": false
+  },
+  {
+    "slug": "23-ryan-street",
+    "status": "For Sale",
+    "title": "23 Ryan Street",
+    "location": "Stamford, Connecticut",
+    "price": "$1,425,000",
+    "images": [
+      {
+        "src": "/media/ce4354f7-1051-47f8-9ba1-5d06f46f500b.jpg",
+        "alt": "White flat-roof commercial building with rooftop equipment and a paved parking area, viewed from above."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "23 Ryan Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 5,
+    "hidden": false
+  },
+  {
+    "slug": "1151-rogers-avenue",
+    "status": "For Sale",
+    "title": "1151 Rogers Avenue",
+    "location": "Flatbush, Brooklyn",
+    "price": "$1,350,000",
+    "images": [
+      {
+        "src": "/media/1e474d6b-e63e-40f3-b56c-b9551c49e477.jpg",
+        "alt": "Brick building with a lime-green barber shop storefront and upper-floor arched windows."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "1151 Rogers Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 6,
+    "hidden": false
+  },
+  {
+    "slug": "1515-wolcott-road",
+    "status": "Under Contract",
+    "title": "1515 Wolcott Road",
+    "location": "Wolcott, Connecticut",
+    "price": "$900,000",
+    "images": [
+      {
+        "src": "/media/b374cf71-e5f4-422f-b39c-46e971b15e06.jpg",
+        "alt": "Single-story commercial building with green siding, storefronts, and a boxing gym sign beside a snowy parking lot."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "1515 Wolcott Road | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 7,
+    "hidden": false
+  },
+  {
+    "slug": "44-east-12th-street",
+    "status": "For Sale",
+    "title": "44 East 12th Street",
+    "location": "West Villiage",
+    "price": "$775,000",
+    "images": [
+      {
+        "src": "/media/287fccf5-595c-47b8-9ea8-4a2c87fca9c6.jpg",
+        "alt": "Building entrance at 44 East 12th Street beneath a green canopy."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": true,
+    "meta_title": "44 East 12th Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "listings",
+    "order": 8,
+    "hidden": false
+  },
+  {
+    "slug": "caro-portfolio",
+    "status": "Sold",
+    "title": "349-Unit Portfolio",
+    "location": "Multi Borough, New York",
+    "price": "$85,900,000",
+    "images": [
+      {
+        "src": "/media/xu86dlcbtaqg8lxbqidm.jpg",
+        "alt": "349-Unit Portfolio"
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "349-Unit Portfolio | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -85900000,
+    "hidden": false
+  },
+  {
+    "slug": "577-and-595-baltic-street",
+    "status": "Sold",
+    "title": "577 & 595 Baltic Street",
+    "location": "Brooklyn, Gowanus",
+    "price": "$54,000,000",
+    "images": [
+      {
+        "src": "/media/a210b0ac-28bf-44bf-85b3-5cb5d1ea658e.jpg",
+        "alt": "Modern residential building with brick and glass facades, balconies, and a rooftop terrace."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "577 & 595 Baltic Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -54000000,
+    "hidden": false
+  },
+  {
+    "slug": "1000-saint-nicholas-drive",
+    "status": "Sold",
+    "title": "1000 Saint Nicholas Drive",
+    "location": "Waldorf, Maryland",
+    "price": "$24,376,000",
+    "images": [
+      {
+        "src": "/media/uod2snmks2fvzenvzca7.jpg",
+        "alt": "1000 Saint Nicholas Drive "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "1000 Saint Nicholas Drive  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -24376000,
+    "hidden": false
+  },
+  {
+    "slug": "106-pinehurst-ave",
+    "status": "Sold",
+    "title": "106 Pinehurst Avenue",
+    "location": "Washington Heights, New York",
+    "price": "$19,500,000",
+    "images": [
+      {
+        "src": "/media/hriiz9mbdi4tdhncn8hk.jpg",
+        "alt": "106 Pinehurst Avenue"
+      }
+    ],
+    "lat": "40.8417082",
+    "lng": "-73.9393554",
+    "schedule_tour": false,
+    "meta_title": "106 Pinehurst Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -19500000,
+    "hidden": false
+  },
+  {
+    "slug": "180-w-81st-st",
+    "status": "Sold",
+    "title": "180 West 81st Street",
+    "location": "Upper West Side, New York",
+    "price": "$17,000,000",
+    "images": [
+      {
+        "src": "/media/frfzelmidgtullheewie.jpg",
+        "alt": "180 West 81st Street"
+      }
+    ],
+    "lat": "40.7870106",
+    "lng": "-73.9753676",
+    "schedule_tour": false,
+    "meta_title": "180 West 81st Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -17000000,
+    "hidden": false
+  },
+  {
+    "slug": "66-w-88th-st",
+    "status": "Sold",
+    "title": "66 West 88th Street",
+    "location": "Upper West Side, New York",
+    "price": "$17,000,000",
+    "images": [
+      {
+        "src": "/media/ajoeal5s7rpaxb77xlqf.jpg",
+        "alt": "66 West 88th Street"
+      }
+    ],
+    "lat": "40.7870106",
+    "lng": "-73.9753676",
+    "schedule_tour": false,
+    "meta_title": "66 West 88th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -17000000,
+    "hidden": false
+  },
+  {
+    "slug": "101-cooper-street",
+    "status": "Sold",
+    "title": "101 Cooper Street",
+    "location": "Washington Heights, New York",
+    "price": "$15,150,000",
+    "images": [
+      {
+        "src": "/media/bs8se6ci2hfs43eexg8z.jpg",
+        "alt": "101 Cooper Street "
+      }
+    ],
+    "lat": "40.8417082",
+    "lng": "-73.9393554",
+    "schedule_tour": false,
+    "meta_title": "101 Cooper Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -15150000,
+    "hidden": false
+  },
+  {
+    "slug": "151-e-90th-st",
+    "status": "Sold",
+    "title": "151 East 90th Street",
+    "location": "Upper East Side, New York",
+    "price": "$15,000,000",
+    "images": [
+      {
+        "src": "/media/gwiqf3ormash8onhuxoy.jpg",
+        "alt": "151 East 90th Street"
+      }
+    ],
+    "lat": "40.7735649",
+    "lng": "-73.9565551",
+    "schedule_tour": false,
+    "meta_title": "151 East 90th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -15000000,
+    "hidden": false
+  },
+  {
+    "slug": "135-w-225th-st",
+    "status": "Sold",
+    "title": "135 West 225th Street",
+    "location": "Marble Hill, New York",
+    "price": "$14,350,000",
+    "images": [
+      {
+        "src": "/media/jzwkj8eqxzsbpz8rdy96.jpg",
+        "alt": "135 West 225th Street"
+      }
+    ],
+    "lat": "40.8761173",
+    "lng": "-73.9102628",
+    "schedule_tour": false,
+    "meta_title": "135 West 225th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -14350000,
+    "hidden": false
+  },
+  {
+    "slug": "147-151-pierce-street",
+    "status": "Sold",
+    "title": "147-151 Pierce Street",
+    "location": "Somerset, New Jersey",
+    "price": "$13,400,000",
+    "images": [
+      {
+        "src": "/media/f2b6387a-da03-46b1-876c-ec1604d50e33.jpg",
+        "alt": "Retail shopping center with a row of storefronts, red awnings, and a large parking lot."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "147-151 Pierce Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -13400000,
+    "hidden": false
+  },
+  {
+    "slug": "617-623-629-w-170th-st-washington-heights",
+    "status": "Sold",
+    "title": "617, 623, 629 West 170th Street",
+    "location": "Washington Heights, New York",
+    "price": "$13,225,000",
+    "images": [
+      {
+        "src": "/media/bfgrweqexdhrhyrgko8m.jpg",
+        "alt": "617, 623, 629 West 170th Street"
+      }
+    ],
+    "lat": "40.8417082",
+    "lng": "-73.9393554",
+    "schedule_tour": false,
+    "meta_title": "617, 623, 629 West 170th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -13225000,
+    "hidden": false
+  },
+  {
+    "slug": "214-216-218-atlantic-ave-boerum-hill",
+    "status": "Sold",
+    "title": "214, 216, 218 Atlantic Avenue",
+    "location": "Boerum Hill, New York",
+    "price": "$9,000,000",
+    "images": [
+      {
+        "src": "/media/dtmhifvytul5cytkrrta.jpg",
+        "alt": "214, 216, 218 Atlantic Avenue"
+      }
+    ],
+    "lat": "40.6848689",
+    "lng": "-73.9844722",
+    "schedule_tour": false,
+    "meta_title": "214, 216, 218 Atlantic Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -9000000,
+    "hidden": false
+  },
+  {
+    "slug": "803-w-180th-st",
+    "status": "Sold",
+    "title": "803 West 180th Street",
+    "location": "Washington Heights, New York",
+    "price": "$8,900,000",
+    "images": [
+      {
+        "src": "/media/y4eundufwjzfjvg97cux.jpg",
+        "alt": "803 West 180th Street"
+      }
+    ],
+    "lat": "40.8417082",
+    "lng": "-73.9393554",
+    "schedule_tour": false,
+    "meta_title": "803 West 180th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -8900000,
+    "hidden": false
+  },
+  {
+    "slug": "125-w-138th-st",
+    "status": "Sold",
+    "title": "125 West 138th Street",
+    "location": "West Harlem, New York",
+    "price": "$6,300,000",
+    "images": [
+      {
+        "src": "/media/acuprvqqc6zx4umlkrnv.jpg",
+        "alt": "125 West 138th Street"
+      }
+    ],
+    "lat": "40.8189374",
+    "lng": "-73.9522075",
+    "schedule_tour": false,
+    "meta_title": "125 West 138th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -6300000,
+    "hidden": false
+  },
+  {
+    "slug": "111-huron-street",
+    "status": "Sold",
+    "title": "111 Huron Street",
+    "location": "Greenpoint, New York",
+    "price": "$6,000,000",
+    "images": [
+      {
+        "src": "/media/skztlfjmufzfs0kukzi1.jpg",
+        "alt": "111 Huron Street "
+      }
+    ],
+    "lat": "40.7304701",
+    "lng": "-73.95150319999999",
+    "schedule_tour": false,
+    "meta_title": "111 Huron Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -6000000,
+    "hidden": false
+  },
+  {
+    "slug": "1134-first-avenue",
+    "status": "Sold",
+    "title": "1134 First Avenue",
+    "location": "Upper East Side, New York",
+    "price": "$5,400,000",
+    "images": [
+      {
+        "src": "/media/iby3yglfghnvzrpsjvdd.jpg",
+        "alt": "1134 First Avenue "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "1134 First Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -5400000,
+    "hidden": false
+  },
+  {
+    "slug": "312-atlantic-avenue",
+    "status": "Sold",
+    "title": "312 Atlantic Avenue",
+    "location": "Boerum Hill, New York",
+    "price": "$5,000,000",
+    "images": [
+      {
+        "src": "/media/vxk7ldeiqwelsu9qcnml.jpg",
+        "alt": "312 Atlantic Avenue "
+      }
+    ],
+    "lat": "40.6848689",
+    "lng": "-73.9844722",
+    "schedule_tour": false,
+    "meta_title": "312 Atlantic Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -5000000,
+    "hidden": false
+  },
+  {
+    "slug": "lawrence-street",
+    "status": "Sold",
+    "title": "142 Lawrence Street",
+    "location": "Downtown Brooklyn, New York",
+    "price": "$5,000,000",
+    "images": [
+      {
+        "src": "/media/h8nkvynkykbl6057hjfj.jpg",
+        "alt": "142 Lawrence Street "
+      }
+    ],
+    "lat": "40.6960679",
+    "lng": "-73.9845407",
+    "schedule_tour": false,
+    "meta_title": "142 Lawrence Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -5000000,
+    "hidden": false
+  },
+  {
+    "slug": "5723-myrtle-avenue",
+    "status": "Sold",
+    "title": "5723 Myrtle Avenue",
+    "location": "Ridgewood, New York",
+    "price": "$4,900,000",
+    "images": [
+      {
+        "src": "/media/tnmmf68zwaah6e5cqgbw.jpg",
+        "alt": "5723 Myrtle Avenue "
+      }
+    ],
+    "lat": "40.9792645",
+    "lng": "-74.11653129999999",
+    "schedule_tour": false,
+    "meta_title": "5723 Myrtle Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4900000,
+    "hidden": false
+  },
+  {
+    "slug": "2372-creston-avenue",
+    "status": "Sold",
+    "title": "2372 Creston Avenue",
+    "location": "Fordham, Bronx",
+    "price": "$4,800,000",
+    "images": [
+      {
+        "src": "/media/f32365d0-4bc8-4ff4-a9ab-b27ce54559d2.jpg",
+        "alt": "Red-brick apartment building with rows of arched windows on a city corner."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "2372 Creston Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4800000,
+    "hidden": false
+  },
+  {
+    "slug": "5733-roosevelt-boulevard-and-50-mccoy-way",
+    "status": "Sold",
+    "title": "5733 Roosevelt Boulevard & 50 McCoy Way",
+    "location": "Jacksonville, Florida",
+    "price": "$4,699,000",
+    "images": [
+      {
+        "src": "/media/01dbf234-421a-4e9b-a933-4a53f2b4e925.jpg",
+        "alt": "Dutch Bros Coffee shop with a blue facade, windmill emblem, and drive-through canopy."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": " 5733 Roosevelt Boulevard & 50 McCoy Way | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4699000,
+    "hidden": false
+  },
+  {
+    "slug": "1984-3rd-ave",
+    "status": "Sold",
+    "title": "1984 3rd Avenue",
+    "location": "East Harlem, New York",
+    "price": "$4,500,000",
+    "images": [
+      {
+        "src": "/media/fjz6yd6rwpavwoanzqq0.jpg",
+        "alt": "1984 3rd Avenue"
+      }
+    ],
+    "lat": "40.7957399",
+    "lng": "-73.93892129999999",
+    "schedule_tour": false,
+    "meta_title": "1984 3rd Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4500000,
+    "hidden": false
+  },
+  {
+    "slug": "330-west-88th-street",
+    "status": "Sold",
+    "title": "330 West 88th Street",
+    "location": "Upper West Side, New York",
+    "price": "$4,500,000",
+    "images": [
+      {
+        "src": "/media/s1votjuerodqs4n2l5br.jpg",
+        "alt": "330 West 88th Street "
+      }
+    ],
+    "lat": "40.7870106",
+    "lng": "-73.9753676",
+    "schedule_tour": false,
+    "meta_title": "330 West 88th Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4500000,
+    "hidden": false
+  },
+  {
+    "slug": "70-middagh-st",
+    "status": "Sold",
+    "title": "70 Middagh Street",
+    "location": "Brooklyn Heights, New York",
+    "price": "$4,500,000",
+    "images": [
+      {
+        "src": "/media/mohjdzikndewg2hpt0yk.jpg",
+        "alt": "70 Middagh Street"
+      }
+    ],
+    "lat": "40.6959294",
+    "lng": "-73.9955523",
+    "schedule_tour": false,
+    "meta_title": "70 Middagh Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4500000,
+    "hidden": false
+  },
+  {
+    "slug": "355-east-50th-street",
+    "status": "Sold",
+    "title": "355 East 50th Street",
+    "location": "Turtle Bay, New York",
+    "price": "$4,425,000",
+    "images": [
+      {
+        "src": "/media/qqdp1xwmt4y2w0ptehos.jpg",
+        "alt": "355 East 50th Street "
+      }
+    ],
+    "lat": "40.5884528",
+    "lng": "-122.3761879",
+    "schedule_tour": false,
+    "meta_title": "355 East 50th Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4425000,
+    "hidden": false
+  },
+  {
+    "slug": "13-avenue-b",
+    "status": "Sold",
+    "title": "13 Avenue B",
+    "location": "East Village, New York",
+    "price": "$4,300,000",
+    "images": [
+      {
+        "src": "/media/mp9puaatpsohy397haqy.jpg",
+        "alt": "13 Avenue B "
+      }
+    ],
+    "lat": "40.7264773",
+    "lng": "-73.98153370000001",
+    "schedule_tour": false,
+    "meta_title": "13 Avenue B | East Village, NY | Studio for Sale | Exodus Capital | New York Investment Firm",
+    "meta_description": "Move into this studio for sale in East Village, NY. Don't settle for less when you can have the very best! Learn more about this great opportunity today!",
+    "section": "track-record",
+    "order": -4300000,
+    "hidden": false
+  },
+  {
+    "slug": "558-3rd-avenue",
+    "status": "Sold",
+    "title": "558 3rd Avenue",
+    "location": "Murray Hill",
+    "price": "$4,300,000",
+    "images": [
+      {
+        "src": "/media/1c73c17d-85e8-4faf-84be-8390acaaf05a.jpg",
+        "alt": "Brick corner building with fire escapes and sidewalk scaffolding beneath taller city buildings."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "558 3rd Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4300000,
+    "hidden": false
+  },
+  {
+    "slug": "601-east-evesham-road",
+    "status": "Sold",
+    "title": "601 East Evesham Road",
+    "location": "Runnemede, New Jersey",
+    "price": "$4,217,000",
+    "images": [
+      {
+        "src": "/media/704c1994-044d-40c9-af87-e13c8d0f03a9.jpg",
+        "alt": "Neighborhood shopping center with a green roof, brick storefronts, and a mostly empty parking lot."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "601 East Evesham Road | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4217000,
+    "hidden": false
+  },
+  {
+    "slug": "435-park-avenue-south",
+    "status": "Sold",
+    "title": "435 Park Avenue South",
+    "location": "Kips Bay",
+    "price": "$4,000,000",
+    "images": [
+      {
+        "src": "/media/42b428ea-6be4-49b2-8bff-96aab4d4b607.jpg",
+        "alt": "Commercial storefronts including Bagel Street and Clover Nails, with a space-for-lease sign above."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "435 Park Avenue South | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -4000000,
+    "hidden": false
+  },
+  {
+    "slug": "408-w-46th-st",
+    "status": "Sold",
+    "title": "408 West 46th Street",
+    "location": "Hell's Kitchen, New York",
+    "price": "$3,750,000",
+    "images": [
+      {
+        "src": "/media/exzilx2xgtw0dnroexal.jpg",
+        "alt": "408 West 46th Street"
+      }
+    ],
+    "lat": "40.7637581",
+    "lng": "-73.9918181",
+    "schedule_tour": false,
+    "meta_title": "408 West 46th Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -3750000,
+    "hidden": false
+  },
+  {
+    "slug": "425-court-street",
+    "status": "Sold",
+    "title": "425 Court Street",
+    "location": "Carroll Gardens, New York",
+    "price": "$3,700,000",
+    "images": [
+      {
+        "src": "/media/roauwgkb9wg3oxn8n0fb.jpg",
+        "alt": "425 Court Street "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "425 Court Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -3700000,
+    "hidden": false
+  },
+  {
+    "slug": "131-greenpoint-ave",
+    "status": "Sold",
+    "title": "131 Greenpoint Avenue",
+    "location": "Greenpoint, New York",
+    "price": "$3,675,000",
+    "images": [
+      {
+        "src": "/media/cksjdlibqhw15nbe0amd.jpg",
+        "alt": "Brick mixed-use buildings with fire escapes, a Jungle Cafe storefront, and sidewalk dining area."
+      },
+      {
+        "src": "/media/q8muppmbyx0kaf4nkwuw.webp",
+        "alt": "Kitchen with exposed brick walls, stainless-steel refrigerator, dark wood cabinets, and a broad gray countertop."
+      },
+      {
+        "src": "/media/cksjdlibqhw15nbe0amd.jpg",
+        "alt": "Brick mixed-use buildings with fire escapes, a Jungle Cafe storefront, and sidewalk dining area."
+      },
+      {
+        "src": "/media/q8muppmbyx0kaf4nkwuw.webp",
+        "alt": "Kitchen with exposed brick walls, stainless-steel refrigerator, dark wood cabinets, and a broad gray countertop."
+      },
+      {
+        "src": "/media/cksjdlibqhw15nbe0amd.jpg",
+        "alt": "Brick mixed-use buildings with fire escapes, a Jungle Cafe storefront, and sidewalk dining area."
+      },
+      {
+        "src": "/media/q8muppmbyx0kaf4nkwuw.webp",
+        "alt": "Kitchen with exposed brick walls, stainless-steel refrigerator, dark wood cabinets, and a broad gray countertop."
+      }
+    ],
+    "lat": "40.7304701",
+    "lng": "-73.95150319999999",
+    "schedule_tour": false,
+    "meta_title": "131 Greenpoint Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -3675000,
+    "hidden": false
+  },
+  {
+    "slug": "119-w-92nd-st",
+    "status": "Sold",
+    "title": "119 West 92nd Street",
+    "location": "Upper West Side, New York",
+    "price": "$3,550,000",
+    "images": [
+      {
+        "src": "/media/u1aamn4lzjp7ttcoje6f.jpg",
+        "alt": "119 West 92nd Street"
+      }
+    ],
+    "lat": "40.7870106",
+    "lng": "-73.9753676",
+    "schedule_tour": false,
+    "meta_title": "119 West 92nd Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -3550000,
+    "hidden": false
+  },
+  {
+    "slug": "715-manhattan-avenue",
+    "status": "Sold",
+    "title": "715 Manhattan Avenue",
+    "location": "Greenpoint, New York",
+    "price": "$3,475,000",
+    "images": [
+      {
+        "src": "/media/qtc1weqloe4zvz4y5npo.jpg",
+        "alt": "715 Manhattan Avenue "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "715 Manhattan Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -3475000,
+    "hidden": false
+  },
+  {
+    "slug": "880-manhattan-avenue",
+    "status": "Sold",
+    "title": "880 Manhattan Avenue",
+    "location": "Greenpoint",
+    "price": "$3,275,000",
+    "images": [
+      {
+        "src": "/media/ipwhcx2yw5dk6gawdnh6.jpg",
+        "alt": "880 Manhattan Avenue "
+      }
+    ],
+    "lat": "40.7304701",
+    "lng": "-73.95150319999999",
+    "schedule_tour": false,
+    "meta_title": "880 Manhattan Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -3275000,
+    "hidden": false
+  },
+  {
+    "slug": "1011-8th-street-west",
+    "status": "Sold",
+    "title": "1011 8th Street West",
+    "location": "Tifton, Georgia",
+    "price": "$2,788,462",
+    "images": [
+      {
+        "src": "/media/jestodir4fr45mdfhaol.jpg",
+        "alt": "1011 8th Street West "
+      }
+    ],
+    "lat": "31.4504629",
+    "lng": "-83.5084973",
+    "schedule_tour": false,
+    "meta_title": "1011 8th Street West  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2788462,
+    "hidden": false
+  },
+  {
+    "slug": "211-main-street",
+    "status": "Sold",
+    "title": "211 Main Street",
+    "location": "211 Main Street , Stamford, CT",
+    "price": "$2,750,000",
+    "images": [
+      {
+        "src": "/media/a29e1d52-9e5f-4a83-bc4e-6a5dd9d8bd48.jpg",
+        "alt": "Red-brick mixed-use building with check-cashing and restaurant storefronts and sidewalk dining."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "211 Main Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2750000,
+    "hidden": false
+  },
+  {
+    "slug": "621-vanderbilt-avenue",
+    "status": "Sold",
+    "title": "621 Vanderbilt Avenue",
+    "location": "Prospect Heights, New York",
+    "price": "$2,600,000",
+    "images": [
+      {
+        "src": "/media/lehqgqnkb07tdlperlel.jpg",
+        "alt": "621 Vanderbilt Avenue "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "621 Vanderbilt Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2600000,
+    "hidden": false
+  },
+  {
+    "slug": "23-adelphi-street",
+    "status": "Sold",
+    "title": "23 Adelphi Street",
+    "location": "Fort Greene, New York",
+    "price": "$2,500,000",
+    "images": [
+      {
+        "src": "/media/q5yc5ocgiwcface0zli3.jpg",
+        "alt": "23 Adelphi Street "
+      }
+    ],
+    "lat": "40.6920638",
+    "lng": "-73.97418739999999",
+    "schedule_tour": false,
+    "meta_title": "23 Adelphi Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2500000,
+    "hidden": false
+  },
+  {
+    "slug": "235-pacific-st-boerum-hill",
+    "status": "Sold",
+    "title": "235 Pacific Street",
+    "location": "Boerum Hill, New York",
+    "price": "$2,500,000",
+    "images": [
+      {
+        "src": "/media/kcl9djrnned83w4mwzvm.jpg",
+        "alt": "235 Pacific Street"
+      }
+    ],
+    "lat": "40.6848689",
+    "lng": "-73.9844722",
+    "schedule_tour": false,
+    "meta_title": "235 Pacific Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2500000,
+    "hidden": false
+  },
+  {
+    "slug": "628-knickerbocker-avenue",
+    "status": "Sold",
+    "title": "628 Knickerbocker Avenue",
+    "location": "Bushwick",
+    "price": "$2,500,000",
+    "images": [
+      {
+        "src": "/media/24d35607-281a-48d4-925c-ab925eba8b19.jpg",
+        "alt": "Urban commercial building with a colorful geometric mural, wood siding, and a ground-floor storefront."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "628 Knickerbocker Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2500000,
+    "hidden": false
+  },
+  {
+    "slug": "66-eckford-street",
+    "status": "Sold",
+    "title": "66 Eckford Street",
+    "location": "Greenpoint",
+    "price": "$2,400,000",
+    "images": [
+      {
+        "src": "/media/d6c3266d-0471-417f-99da-ff1bb4250ee0.jpg",
+        "alt": "Attached residential buildings with blue siding, white siding, and orange brick, viewed from the street."
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "66 Eckford Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2400000,
+    "hidden": false
+  },
+  {
+    "slug": "500-north-avenue",
+    "status": "Sold",
+    "title": "500 North Avenue",
+    "location": "Bridgeport, Connecticut",
+    "price": "$2,271,379",
+    "images": [
+      {
+        "src": "/media/rohqso2tcvxx6jvpkfbj.jpg",
+        "alt": "500 North Avenue "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "500 North Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2271379,
+    "hidden": false
+  },
+  {
+    "slug": "436-and-438-saint-nicholas-avenue",
+    "status": "Sold",
+    "title": "436 & 438 Saint Nicholas Avenue",
+    "location": "Harlem, New York",
+    "price": "$2,200,000",
+    "images": [
+      {
+        "src": "/media/vmuvtnrsjrstlk6xofd0.jpg",
+        "alt": "436 & 438 Saint Nicholas Avenue"
+      }
+    ],
+    "lat": "40.8115504",
+    "lng": "-73.9464769",
+    "schedule_tour": false,
+    "meta_title": "436 & 438 Saint Nicholas Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2200000,
+    "hidden": false
+  },
+  {
+    "slug": "197-malcolm-x",
+    "status": "Sold",
+    "title": "197 Malcolm X Boulevard",
+    "location": "Bedford Stuyvesant, New York",
+    "price": "$2,150,000",
+    "images": [
+      {
+        "src": "/media/knqzuyredguqva83cyrm.jpg",
+        "alt": "197 Malcolm X Boulevard "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "197 Malcolm X Boulevard  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2150000,
+    "hidden": false
+  },
+  {
+    "slug": "301-halsey-street-bedford-stuyvesant",
+    "status": "Sold",
+    "title": "301 Halsey Street",
+    "location": "Bedford Stuyvesant, New York",
+    "price": "$2,110,000",
+    "images": [
+      {
+        "src": "/media/twj8wsqrhee6kfcv1r3q.jpg",
+        "alt": "301 Halsey Street"
+      }
+    ],
+    "lat": "40.6872176",
+    "lng": "-73.9417735",
+    "schedule_tour": false,
+    "meta_title": "301 Halsey Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2110000,
+    "hidden": false
+  },
+  {
+    "slug": "157-ludlow-street",
+    "status": "Sold",
+    "title": "157 Ludlow Street",
+    "location": "Lower East Side, New York",
+    "price": "$2,100,000",
+    "images": [
+      {
+        "src": "/media/pgjyejhbrtzygggugewy.jpg",
+        "alt": "157 Ludlow Street "
+      }
+    ],
+    "lat": "40.715033",
+    "lng": "-73.9842724",
+    "schedule_tour": false,
+    "meta_title": "157 Ludlow Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2100000,
+    "hidden": false
+  },
+  {
+    "slug": "2154-2nd-ave",
+    "status": "Sold",
+    "title": "2154 2nd Avenue",
+    "location": "East Harlem, New York",
+    "price": "$2,050,000",
+    "images": [
+      {
+        "src": "/media/jug7q13vebff5k1tfhja.jpg",
+        "alt": "2154 2nd Avenue"
+      }
+    ],
+    "lat": "40.7957399",
+    "lng": "-73.93892129999999",
+    "schedule_tour": false,
+    "meta_title": "2154 2nd Avenue | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -2050000,
+    "hidden": false
+  },
+  {
+    "slug": "538-west-149th-street",
+    "status": "Sold",
+    "title": "538 West 149th Street",
+    "location": "West Harlem, New York",
+    "price": "$1,950,000",
+    "images": [
+      {
+        "src": "/media/nxkp4f62xe6bpjhregp8.jpg",
+        "alt": "538 West 149th Street "
+      }
+    ],
+    "lat": "40.8115504",
+    "lng": "-73.9464769",
+    "schedule_tour": false,
+    "meta_title": "538 West 149th Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1950000,
+    "hidden": false
+  },
+  {
+    "slug": "626-east-140th-street",
+    "status": "Sold",
+    "title": "626 East 140th Street",
+    "location": "Mott Haven, New York",
+    "price": "$1,920,000",
+    "images": [
+      {
+        "src": "/media/zcxjmoyydd3y8tbyfgag.jpg",
+        "alt": "626 East 140th Street "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "626 East 140th Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1920000,
+    "hidden": false
+  },
+  {
+    "slug": "1468-fulton-street",
+    "status": "Sold",
+    "title": "1468 Fulton Street",
+    "location": "Bedford-Stuyvesant, New York",
+    "price": "$1,900,000",
+    "images": [
+      {
+        "src": "/media/swslwfcuz50sn9hguqok.jpg",
+        "alt": "1468 Fulton Street "
+      }
+    ],
+    "lat": "40.6872176",
+    "lng": "-73.9417735",
+    "schedule_tour": false,
+    "meta_title": "1468 Fulton Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1900000,
+    "hidden": false
+  },
+  {
+    "slug": "132-broadway",
+    "status": "Sold",
+    "title": "132 Broadway",
+    "location": "Williamsburg, New York",
+    "price": "$1,870,000",
+    "images": [
+      {
+        "src": "/media/wdwlp3rm8piv59tct0e2.jpg",
+        "alt": "132 Broadway"
+      }
+    ],
+    "lat": "37.2707022",
+    "lng": "-76.7074571",
+    "schedule_tour": false,
+    "meta_title": "132 Broadway | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1870000,
+    "hidden": false
+  },
+  {
+    "slug": "168-sumpter-street",
+    "status": "Sold",
+    "title": "168 Sumpter Street",
+    "location": "Bedford Stuyvesant, New York",
+    "price": "$1,520,000",
+    "images": [
+      {
+        "src": "/media/q8wjviwfcac5b6hbivtb.jpg",
+        "alt": "168 Sumpter Street "
+      }
+    ],
+    "lat": "40.6872176",
+    "lng": "-73.9417735",
+    "schedule_tour": false,
+    "meta_title": "168 Sumpter Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1520000,
+    "hidden": false
+  },
+  {
+    "slug": "2017-fulton-street",
+    "status": "Sold",
+    "title": "2017 Fulton Street",
+    "location": "Bedford Stuyvesant, New York",
+    "price": "$1,315,000",
+    "images": [
+      {
+        "src": "/media/d75dd91d-b268-41bb-a768-a32f6e2f8c62.jpg",
+        "alt": "2017 Fulton Street"
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "2017 Fulton Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1315000,
+    "hidden": false
+  },
+  {
+    "slug": "1485-fulton-street",
+    "status": "Sold",
+    "title": "1485 Fulton Street",
+    "location": "Bedford Stuyvesant, New York",
+    "price": "$1,250,000",
+    "images": [
+      {
+        "src": "/media/x3alvdj6gt7ivelcojyz.jpg",
+        "alt": "1485 Fulton Street"
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "1485 Fulton Street | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1250000,
+    "hidden": false
+  },
+  {
+    "slug": "251-and-238-coleman-street",
+    "status": "Sold",
+    "title": "251 & 238 Coleman Street",
+    "location": "Bridgeport, Connecticut",
+    "price": "$1,010,000",
+    "images": [
+      {
+        "src": "/media/5e8ced58-16f3-4e04-9fee-eafec3a9b44e.jpg",
+        "alt": "251 & 238 Coleman Street "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "251 & 238 Coleman Street  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -1010000,
+    "hidden": false
+  },
+  {
+    "slug": "3845-danbury-road",
+    "status": "Sold",
+    "title": "3845 Danbury Road",
+    "location": "Brewster",
+    "price": "$805,000",
+    "images": [
+      {
+        "src": "/media/d1e9b43d-7317-4961-bfaf-5372ec913bca.jpg",
+        "alt": "3845 Danbury Road "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "3845 Danbury Road  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -805000,
+    "hidden": false
+  },
+  {
+    "slug": "2671-fairfield-avenue",
+    "status": "Sold",
+    "title": "2671 Fairfield Avenue",
+    "location": "Bridgeport, Connecticut",
+    "price": "$720,000",
+    "images": [
+      {
+        "src": "/media/96a411cf-c37b-418a-8969-ac032e6483a4.jpg",
+        "alt": "2671 Fairfield Avenue "
+      }
+    ],
+    "lat": null,
+    "lng": null,
+    "schedule_tour": false,
+    "meta_title": "2671 Fairfield Avenue  | Exodus Capital | New York Investment Firm",
+    "meta_description": "",
+    "section": "track-record",
+    "order": -720000,
+    "hidden": false
+  }
+]

@@ -1,0 +1,4 @@
+dist/
+dist-flat/
+*.new/
+.DS_Store

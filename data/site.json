@@ -1,0 +1,195 @@
+{
+  "name": "Exodus Capital",
+  "url": "https://exoduscapitalcre.com",
+  "tagline": "Tri State Investment Sales",
+  "default_title": "Exodus Capital | New York Investment Firm",
+  "default_description": "Exodus Capital is a commercial real estate investment sales brokerage focused on the Tri-State area. We exit clients out of assets and into opportunities.",
+  "email": "info@exoduscapitalcre.com",
+  "phone": "646-840-8201",
+  "phone_mobile_button": "646-380-2747",
+  "phone2": "646-921-4477",
+  "phone2_label": "Fax Number",
+  "address": ["19 Court Street, Suite 402", "White Plains, NY 10601"],
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/exoduscapitalcre",
+    "instagram": "https://www.instagram.com/exoduscapital.cre/"
+  },
+  "nav_left": [
+    {"label": "Team", "href": "/team/"},
+    {"label": "Listings", "href": "/listings/"},
+    {"label": "Careers", "href": "/careers/"}
+  ],
+  "nav_right": [
+    {"label": "Track Record", "href": "/properties/track-record/"},
+    {"label": "Contact Us", "modal": "contact"}
+  ],
+  "menu": [
+    {"label": "Home", "href": "/"},
+    {"label": "Meet Our Team", "href": "/team/"},
+    {"label": "Track Record", "href": "/properties/track-record/"},
+    {"label": "Listings", "href": "/listings/"},
+    {"label": "Testimonials", "href": "/testimonials/"},
+    {"label": "Blog", "href": "/blog/"},
+    {"label": "Careers", "href": "/careers/"},
+    {"label": "Contact Us", "modal": "contact"}
+  ],
+  "footer_disclaimer": [
+    "All information is deemed reliable but not guaranteed and should be independently reviewed and verified.",
+    "Nathaniel Pierce, Esq as New York Broker of Record."
+  ],
+  "footer_license": {
+    "line": "Brian Brockman - Bang Realty New England Inc.",
+    "license": "License #: REB.0792373.",
+    "email": "bor@bangrealty.com",
+    "phone": "(513) 898-1551"
+  },
+  "consent_text": "I agree to be contacted by Exodus Capital via call, email, and text for real estate services. To opt out, you can reply 'stop' at any time or reply 'help' for assistance. You can also click the unsubscribe link in the emails. Message and data rates may apply. Message frequency may vary.",
+  "forms": {
+    "provider": "netlify",
+    "action": "",
+    "note": "provider: 'netlify' (free, works as-is on Netlify), or 'custom' with an 'action' URL such as a Formspree/Web3Forms endpoint or a Salesforce Web-to-Lead URL."
+  },
+  "analytics_html": "",
+
+  "home": {
+    "hero_title": "Tri State Investment Sales",
+    "hero_button": {"label": "Our Brand", "href": "/team/"},
+    "why_title": "Why Exodus?",
+    "why_text": "We are in the business of exiting clients out of assets and into opportunities. We broker with a cycle-awareness approach with the goal of transforming client equity into cash flowing investments. We help transition local capital into out of state opportunities. With a middle market focus, we advise generational ownership and institutional funds.",
+    "stats": [
+      {"value": "865K+", "label": "square footage sold"},
+      {"value": "$100M", "label": "Sold in 24 months"},
+      {"value": "$270M", "label": "Sales volume"},
+      {"value": "750", "label": "units sold"},
+      {"value": "2022", "label": "founded"},
+      {"value": "45+", "label": "buildings sold"}
+    ],
+    "submarkets_title": "Submarkets Sold In",
+    "transactions_title": "Browse Our Transactions",
+    "reviews_title": "Our Client Reviews"
+  },
+
+  "team": {
+    "hero_title": "About the team",
+    "grid_title": "Meet the Exodus Capital Team",
+    "track_title": "Our Track Record",
+    "track_text": "We are in the business of exiting clients out of assets and into opportunities. We broker with a cycle-awareness approach with the goal of transforming client equity into cash flowing investments.",
+    "stats": [
+      {"value": "$270,000,000", "label": "Sales Volume"},
+      {"value": "865,000", "label": "Square Footage"},
+      {"value": "45", "label": "Buildings Sold"}
+    ],
+    "press_title": "Featured In",
+    "notable_title": "Notable Sales",
+    "reviews_title": "Our Clients Reviews"
+  },
+
+  "careers": {
+    "hero_pretitle": "Join the team?",
+    "hero_title": "Transforming Real Estate. Transforming Careers.",
+    "who_title": "Who We Are",
+    "who_text": "Exodus Capital is a leading commercial real estate investment sales brokerage specializing in the Tri-State Area. We focus on transitioning client equity into cash-flowing investments, advising both generational property owners and institutional funds. Since our founding in 2022, we have successfully sold over 700,000 square feet of commercial properties, totaling more than $270 million in sales volume.",
+    "apply_title": "Apply Now",
+    "apply_text": "We're a top-revered team, with a wealth of knowledge among the Tri State area and aggressively growing our sales team. Fill out your information below and one of our recruiters will get in touch with you.",
+    "apply_roles": ["Internship", "Investment Sales Associate"],
+    "press_title": "As Seen In",
+    "stats_title": "Our Team Accolades",
+    "stats": [
+      {"value": "750K+", "label": "Square footage sold"},
+      {"value": "2022", "label": "founded"},
+      {"value": "$270M", "label": "Sales volume"},
+      {"value": "$100M", "label": "Within 24 months"},
+      {"value": "45+", "label": "Buildings sold"},
+      {"value": "750", "label": "Units sold"}
+    ],
+    "founder_title": "About The Founder:",
+    "founder_name": "Haley Hasho",
+    "founder_youtube_id": "5nVJTgqRqMc",
+    "founder_social": {"linkedin": "https://www.linkedin.com/in/haleyhasho/", "instagram": "https://www.instagram.com/haleyhasho/"},
+    "apart_title": "What Sets Us Apart",
+    "apart_items": [
+      {"title": "World-Class Brokerage Support:", "text": "Access cutting-edge tools and resources, including CoStar, CRM platforms, and advanced market analytics to enhance your productivity and close deals more effectively."},
+      {"title": "Comprehensive Training and Development:", "text": "Ongoing professional growth opportunities through training sessions, mentorship programs, and industry updates."},
+      {"title": "Collaborative Work Environment:", "text": "A supportive and high-energy team culture that values collaboration and shared success."},
+      {"title": "Administrative Support:", "text": "Dedicated assistance with operations, transaction management, and marketing support to streamline your workload and allow you to focus on client relationships and generating new deals."},
+      {"title": "Competitive Commission Structure:", "text": "A performance-driven compensation package that rewards success and supports your long-term financial goals."}
+    ],
+    "apart_button": "Apply Here",
+    "featured_title": "Featured Properties",
+    "culture_title": "Our Culture",
+    "culture_button": {"label": "Meet the Team", "href": "/team/"},
+    "testimonials_title": "Testimonials",
+    "cta_title": "Selling or buying?"
+  },
+
+  "vision": {
+    "slides": [
+      {"pretitle": "Equity Evaluation", "title": "What is my building worth?"},
+      {"pretitle": "Boots on the ground", "title": "How do we stimulate market activity?"},
+      {"pretitle": "Market Pollination", "title": "Who's in our network?"},
+      {"pretitle": "Transitional Real Estate", "title": "Do I stay in NYC?"}
+    ],
+    "slide_buttons": [
+      {"label": "Search Listings", "href": "/listings/"},
+      {"label": "National Partnership", "href": "/national-partnership/"}
+    ],
+    "approach_title": "Exodus Approach",
+    "approach": [
+      {"title": "Equity Evaluation", "text": "What is your building worth in today’s market? This is when we underwrite and articulate the value of your asset and lay out a blueprint on how to maximize your proceeds."},
+      {"title": "Boots on the Ground", "text": "How do you stimulate market activity? We exclusively engage the market with a constant contact approach. We pick up the phone and make direct calls to all the usual suspects, exchange buyers, and any neighboring assets. After initial market feedback, we take a data driven approach in which we leverage a market-wide process to uncover new equity sources."},
+      {"title": "Market Pollination", "text": "Who’s in your network? With organic market crossover, this allows us to leverage existing relationships and widen our buyer pool through in-house and external brokers."},
+      {"title": "Transitional Real Estate", "text": "You sold my property, now what? Once we sell your building, we take a hands-on approach during your time-sensitive 1031 exchange process. With our <a href=\"https://horvathtremblay.com/\" target=\"_blank\" rel=\"noopener\">Horvath &amp; Tremblay</a> partnership of net leased inventory and multifamily apartments throughout the U.S., we collectively help you identify a 1031 solution."}
+    ],
+    "news_title": "Our News"
+  },
+
+  "news": [
+    {"title": "Haley Rose Hasho: Makes Her Mark", "description": "Co-Founder of Exodus Capital.", "source": "Womlead Magazine", "date": "March 29, 2023", "url": "https://www.womleadmag.com/haley-rose-hasho-makes-her-mark-nyc-real-estate/", "image": "womlead"},
+    {"title": "Take a Look at Some of The Top Real Estate Professionals To Follow In 2023", "description": "", "source": "U.S. Reporter", "date": "March 4, 2023", "url": "https://usreporter.com/top-real-estate-professionals-to-follow-in-2023/", "image": "usreporter"},
+    {"title": "Rosedale Management unloaded 10 of 13 properties", "description": "", "source": "The Real Deal", "date": "July 15, 2021", "url": "https://therealdeal.com/2021/07/16/rent-law-covid-leave-family-landlord-with-one-choice-sell/", "image": "realdeal"},
+    {"title": "180 West 81st Street sells for $17,000,000", "description": "", "source": "New York Times", "date": "September 28, 2020", "url": "https://www.nytimes.com/2020/09/29/business/new-york-commercial-real-estate.html", "image": "nyt_81st"},
+    {"title": "70 Middagh Street sells for $4,500,000", "description": "", "source": "The New York Times", "date": "November 17, 2020", "url": "https://www.nytimes.com/2020/11/17/business/new-york-commercial-real-estate.html", "image": "nyt_middagh"},
+    {"title": "2021 NYREJ Ones to Watch", "description": "", "source": "New York Real Estate Journal", "date": "January 19, 2021", "url": "https://nyrej.com/investment-sales-brooklyn-will-become-the-choice-for-new-yorkers-who-plan-to-stay-by-justin-conway", "image": "nyrej"},
+    {"title": "Top Young Professionals Class of 2021", "description": "", "source": "Commercial Observer", "date": "November 1, 2021", "url": "https://commercialobserver.com/power-series/player/haley-hasho-27/", "image": "commercial_observer"}
+  ],
+
+  "partnership": {
+    "slides": [
+      {"pretitle": "1031 Exchange Desk", "title": "Nationwide Coverage"},
+      {"pretitle": "National Partnership", "title": "$7,000,000,000+ Closed"},
+      {"pretitle": "National Multifamily Investments", "title": "Net Lease &amp; Multifamily Inventory"}
+    ],
+    "slide_buttons": [
+      {"label": "Search listings", "href": "https://www.loopnet.com/company/horvath-tremblay/lynnfield-ma/w3chpkkl/", "external": true},
+      {"label": "About 1031 exchanges", "href": "https://horvathtremblay.com/1031-exchange/", "external": true}
+    ],
+    "intro_text": "Horvath &amp; Tremblay is one of the most active and successful investment real estate brokerage firms in the United States. Their advisors specialize in the sale of single-tenant net-lease, multi-tenant retail, apartment, and mixed-use properties. They have experience in successfully structuring sale lease-back programs, portfolio dispositions, and 1031 exchanges. With a dedicated 1031 buy-side desk that provides real-time inventory and market data to each individual client, they have the national capability to place capital.",
+    "grid": [
+      {"title": "Triple Net Leases", "href": "https://horvathtremblay.com/retail/", "image": 0},
+      {"title": "National Multifamily", "href": "https://horvathtremblay.com/results/", "image": 1},
+      {"title": "Offices", "href": "https://horvathtremblay.com/contact/", "image": 2}
+    ],
+    "accordion": [
+      {"title": "Collaborative Culture", "text": "Designed without private offices, our open floor layout allows for information to move quickly and efficiently throughout our entire organization. This culture ensures that our entire company works together to effectively achieve exceptional execution and unmatched results for our clients."},
+      {"title": "Relationship Focused", "text": "Our relationships are more important than any individual transaction. We invest the time and resources to fully understand our client’s motivations and goals. This enables us to approach each assignment with a focus on the long term success of our clients."},
+      {"title": "Defined Expertise", "text": "Our firm, comprised of highly skilled Investment Real Estate Advisors, specializes in the sale of single tenant net-lease, multi-tenant retail, apartment and mixed-use properties. Each advisor is assigned a specific geographical area. This specialization helps us skillfully navigate and negotiate real estate transactions within each local submarket. Our advisors have a long track record of helping to achieve superior results for private investors, developers, institutions and industry professionals."}
+    ],
+    "stats_title": "National Footprint",
+    "stats": [
+      {"value": "7B", "label": "Sales volume"},
+      {"value": "44", "label": "States sold in"},
+      {"value": "2B", "label": "Active inventory"},
+      {"value": "1000+", "label": "Transactions sold"},
+      {"value": "6", "label": "Years in business"}
+    ],
+    "cta_text": "Our national partnership",
+    "cta_button": {"label": "Learn More", "href": "https://horvathtremblay.com/", "external": true}
+  },
+
+  "cta": {
+    "left_title": "Work With Exodus",
+    "left_button": "Contact Us",
+    "right_title": "Receive Market Updates",
+    "right_button": "Register Now"
+  }
+}

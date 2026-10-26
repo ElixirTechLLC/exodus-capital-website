@@ -1,0 +1,84 @@
+{
+  "logo_dark": "/media/imysmjealn9glmmqrkr7.png",
+  "logo_light": "/media/p8nszmj4ouvdopuwwu0h.png",
+  "x_mark": "/media/87715065-3533-4a55-bf49-305fc2cca4d1.png",
+  "press": [
+    "/media/krzikvyes5egtvuxugim.png",
+    "/media/ewlu9bqhzushhalfv0gh.png",
+    "/media/itk4zafdkyhw62uyoako.png",
+    "/media/clynm0totmrk8poh4w7o.png",
+    "/media/fkfmrnpc45olimozjaj2.png",
+    "/media/t0gncin7jpjfwvxj2mme.png",
+    "/media/ahon893al3alkfh1sorg.png"
+  ],
+  "submarkets": [
+    "/media/qogqtlhwfznnsmm1wgpv.png",
+    "/media/jprotg4f15vkc4bzy2xc.png",
+    "/media/dh4ybr0j7boqleimpths.png",
+    "/media/yrdnruhavnubk6zr6t0y.png",
+    "/media/tjownvy8z1o6jnpqv1u6.png",
+    "/media/q4mixsek2yklsn7b31ey.png",
+    "/media/ojaiwl26ffuqkuwrkcaw.png",
+    "/media/vfbp7qzqrxdu7kio9nie.png",
+    "/media/rsrffwb0xbbm1vfzzobj.png",
+    "/media/n5t5kpy082hrv8zpgcxg.png",
+    "/media/zwuzjunptdldzmpnlpwk.png",
+    "/media/k3n3webc9bor6qznlm1w.png",
+    "/media/div4v7x6ti6bmk0zielr.png"
+  ],
+  "stats_bg": "/media/d9008ba2-193e-4251-b96f-f38ca9d2ef7b.jpg",
+  "cta_contact": "/media/1d414250-2f8f-4ad5-8122-b34e7e5fe66d.jpg",
+  "cta_updates": "/media/6c0393d7-b8cc-4c62-956c-5eada9e52f0b.jpg",
+  "team_hero": "/media/vhbjyueunb9kdlqpschk.jpg",
+  "founder_poster": "/media/3dca8e58-22e0-4b2f-a22b-06895469e3e2.png",
+  "careers_team": "/media/235d0d96-f7e6-430d-a21d-20e5a6722f27.jpg",
+  "careers_culture": [
+    "/media/01c49dcc-932d-4765-9d82-d8fc602d2041.jpg",
+    "/media/84b52548-e02b-412c-b6a8-79337e7094e0.jpg"
+  ],
+  "partner_logo": "/media/c42cbc91-8ce2-4d21-b99c-94b8099851aa.png",
+  "partner_press": [
+    "/media/lx848cijxhweyub3lmzw.jpg",
+    "/media/mjpz3oyhqtzkwpfesxeg.png",
+    "/media/ku6jor9tlqzzjp9rmgjs.png",
+    "/media/gaop6r27odhz6lkebavk.jpg",
+    "/media/ctdvc2mbog8k7pgjfvjn.jpg",
+    "/media/so6fweqtcdgbp2fghqwr.jpg"
+  ],
+  "partner_grid": [
+    "/media/46681eb1-028e-476c-9251-614f69c45a6f.jpg",
+    "/media/d5504827-1591-42f7-aced-a014a2c6c955.jpg",
+    "/media/e254baa7-6e84-4568-99b6-1ea8afc57678.jpg"
+  ],
+  "news": {
+    "womlead": "/media/e13nwo9tndlhzbhlr78y.jpg",
+    "usreporter": "/media/g6rxz8p0otxw3ytyk6em.jpg",
+    "realdeal": "/media/cirik4cqjr1ni0maa68p.jpg",
+    "nyt_81st": "/media/y3vzp1hltmdft3tas9z6.jpg",
+    "nyt_middagh": "/media/wpbsiaxfoypz9dzzx09c.png",
+    "nyrej": "/media/fpwmydjxwuibcenjizlj.jpg",
+    "commercial_observer": "/media/g1yd6tolrk9gms9ty7qq.jpg"
+  },
+  "videos": {
+    "hero-home": {
+      "video": "/media/hero-home.mp4",
+      "poster": "/media/hero-home.jpg"
+    },
+    "reviews-bg": {
+      "video": "/media/reviews-bg.mp4",
+      "poster": "/media/reviews-bg.jpg"
+    },
+    "transactions-bg": {
+      "video": "/media/transactions-bg.mp4",
+      "poster": "/media/transactions-bg.jpg"
+    },
+    "hero-vision": {
+      "video": "/media/hero-vision.mp4",
+      "poster": "/media/hero-vision.jpg"
+    },
+    "hero-partnership": {
+      "video": "/media/hero-partnership.mp4",
+      "poster": "/media/hero-partnership.jpg"
+    }
+  }
+}
