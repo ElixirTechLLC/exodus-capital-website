@@ -355,6 +355,10 @@ def layout(title, description, body, path, header_light=False, og_image=None, bo
 
 
 # ---------------------------------------------------------------- components
+# Pages without a hero image open with a solid black band behind the
+# transparent header (white logo), exactly like the original site.
+TOPBAND = '<div class="topband"></div>'
+
 def hero_video(video_key, inner, overlay="hero__overlay", extra=""):
     v = assets["videos"][video_key]
     return '''
@@ -584,10 +588,10 @@ def page_agent(a):
 
 def grid_page(title, items, path, meta_title, meta_desc, extra_top=""):
     cards = "".join(property_card(p) for p in items)
-    body = extra_top + '<section class="section section--light" style="padding-top:calc(var(--header-h) + 48px)"><div class="container"><h1 class="sr-only">%s</h1><div class="grid grid--2">%s</div>%s</div></section>' % (
+    body = TOPBAND + extra_top + '<section class="section section--light"><div class="container"><h1 class="sr-only">%s</h1><div class="grid grid--2">%s</div>%s</div></section>' % (
         E(title), cards, "" if items else '<p class="text-center">No listings at the moment. Please check back soon.</p>')
     body += follow_strip() + cta_grid()
-    return layout(meta_title, meta_desc, body, path, header_light=True)
+    return layout(meta_title, meta_desc, body, path)
 
 
 def page_listings():
@@ -596,11 +600,11 @@ def page_listings():
 
 
 def page_track_record():
-    top = '<div style="padding-top:var(--header-h)"></div>' + logo_row(assets["submarkets"], title=site["home"]["submarkets_title"], submarkets=True, marquee=True)
+    top = TOPBAND + logo_row(assets["submarkets"], title=site["home"]["submarkets_title"], submarkets=True, marquee=True)
     cards = "".join(property_card(p) for p in sold)
     body = top + '<section class="section section--light" style="padding-top:0"><div class="container"><h1 class="sr-only">Track Record</h1><div class="grid grid--2">%s</div></div></section>' % cards
     body += follow_strip() + cta_grid()
-    return layout("Track Record | New York Investment Firm | Exodus Capital", "Closed investment sales by Exodus Capital across New York, New Jersey, Connecticut and beyond.", body, "/properties/track-record/", header_light=True)
+    return layout("Track Record | New York Investment Firm | Exodus Capital", "Closed investment sales by Exodus Capital across New York, New Jersey, Connecticut and beyond.", body, "/properties/track-record/")
 
 
 def page_property(p):
@@ -833,25 +837,25 @@ def page_partnership():
 
 
 def page_privacy():
-    body = '<section class="section section--light" style="padding-top:calc(var(--header-h) + 48px)"><div class="container container--narrow"><h1 style="font-size:28px;margin-bottom:32px">Privacy Policy</h1><div class="rich">%s</div></div></section>' % privacy_html
-    return layout("Privacy Policy | Exodus Capital | New York Investment Firm", "Privacy policy and terms of use for exoduscapitalcre.com.", body, "/terms-and-conditions/", header_light=True)
+    body = TOPBAND + '<section class="section section--light"><div class="container container--narrow"><h1 style="font-size:28px;margin-bottom:32px">Privacy Policy</h1><div class="rich">%s</div></div></section>' % privacy_html
+    return layout("Privacy Policy | Exodus Capital | New York Investment Firm", "Privacy policy and terms of use for exoduscapitalcre.com.", body, "/terms-and-conditions/")
 
 
 def page_sitemap():
     def col(title, links):
         return '<div><h3>%s</h3><ul>%s</ul></div>' % (E(title), "".join('<li><a href="%s">%s</a></li>' % (E(h), E(t)) for t, h in links))
     pages = [("Home", "/"), ("Meet Our Team", "/team/"), ("Track Record", "/properties/track-record/"), ("Listings", "/listings/"), ("Testimonials", "/testimonials/"), ("Blog", "/blog/"), ("Careers", "/careers/"), ("Our Vision", "/our-vision/"), ("National Partnership", "/national-partnership/"), ("Privacy Policy", "/terms-and-conditions/")]
-    body = '<section class="section section--light" style="padding-top:calc(var(--header-h) + 48px)"><div class="container"><h1 style="font-size:28px;margin-bottom:40px">Sitemap</h1><div class="sitemap-cols">%s%s%s%s%s</div></div></section>' % (
+    body = TOPBAND + '<section class="section section--light"><div class="container"><h1 style="font-size:28px;margin-bottom:40px">Sitemap</h1><div class="sitemap-cols">%s%s%s%s%s</div></div></section>' % (
         col("Pages", pages), col("Team", [(a["name"], "/agent/%s/" % a["slug"]) for a in team]),
         col("Listings", [(p["title"], "/properties/%s/" % p["slug"]) for p in listings]),
         col("Track Record", [(p["title"], "/properties/%s/" % p["slug"]) for p in sold]),
         col("Blog", [(p["title"], "/blog/%s/" % p["slug"]) for p in posts]))
-    return layout("Sitemap | Exodus Capital", "All pages on exoduscapitalcre.com.", body, "/sitemap/", header_light=True)
+    return layout("Sitemap | Exodus Capital", "All pages on exoduscapitalcre.com.", body, "/sitemap/")
 
 
 def page_404():
-    body = '<section class="section section--light text-center" style="padding-top:calc(var(--header-h) + 96px);min-height:70vh"><div class="container"><h1 style="font-size:28px">Page not found</h1><p style="margin:20px 0 32px;color:var(--gray)">The page you are looking for does not exist or has moved.</p><a class="btn btn--dark" href="/">Back to Home</a></div></section>'
-    return layout("Page not found | Exodus Capital", "Page not found.", body, "/404.html", header_light=True)
+    body = TOPBAND + '<section class="section section--light text-center" style="min-height:60vh"><div class="container"><h1 style="font-size:28px">Page not found</h1><p style="margin:20px 0 32px;color:var(--gray)">The page you are looking for does not exist or has moved.</p><a class="btn btn--dark" href="/">Back to Home</a></div></section>'
+    return layout("Page not found | Exodus Capital", "Page not found.", body, "/404.html")
 
 
 # ---------------------------------------------------------------- build

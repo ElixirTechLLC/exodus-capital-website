@@ -111,6 +111,9 @@ h5 { font-size: 15px; }
   .hamburger { margin-left: 0; }
 }
 
+.topband { height: 170px; background: var(--ink); }
+@media (max-width: 900px) { .topband { height: 120px; } }
+
 /* ---------- side menu ---------- */
 .drawer { position: fixed; inset: 0; z-index: 60; visibility: hidden; }
 .drawer__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.55); opacity: 0; transition: opacity .3s; }
