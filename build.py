@@ -334,6 +334,7 @@ def layout(title, description, body, path, header_light=False, og_image=None, bo
 <meta property="og:description" content="%s">
 <meta property="og:image" content="%s">
 <meta property="og:url" content="%s">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -358,7 +359,8 @@ def hero_video(video_key, inner, overlay="hero__overlay", extra=""):
     v = assets["videos"][video_key]
     return '''
 <section class="hero %s">
-  <video class="hero__video" autoplay muted loop playsinline preload="none" poster="%s" data-src="%s"></video>
+  <img class="hero__poster" src="%s" alt="" fetchpriority="high">
+  <video class="hero__video" autoplay muted loop playsinline preload="auto" src="%s"></video>
   <div class="%s"></div>
   <div class="hero__content">%s</div>
 </section>''' % (extra, E(v["poster"]), E(v["video"]), overlay, inner)
@@ -444,7 +446,8 @@ def reviews_section(title):
 </div>''' % (E(assets["x_mark"]), E(t["name"]), E(t["quote"][:230].rsplit(" ", 1)[0] + "...")) for t in testimonials)
     return '''
 <section class="reviews section">
-  <video class="reviews__video" autoplay muted loop playsinline preload="none" poster="%s" data-src="%s"></video>
+  <img class="reviews__poster" src="%s" alt="" loading="lazy">
+  <video class="reviews__video" autoplay muted loop playsinline preload="none" data-src="%s"></video>
   <div class="reviews__overlay"></div>
   <div class="container" data-carousel data-autoplay="6000">
     <h2 class="reviews__title">%s</h2>

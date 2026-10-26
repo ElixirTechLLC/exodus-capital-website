@@ -133,14 +133,15 @@ h5 { font-size: 15px; }
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white); overflow: hidden; background: var(--ink); }
 .hero--short { min-height: 70vh; }
 .hero--half { min-height: 62vh; }
-.hero__media, .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__media, .hero__video, .hero__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* the poster is a real <img> under the video: Safari letterboxes a video's poster attribute with black bars */
 .hero__overlay { position: absolute; inset: 0; background: rgba(0,0,0,.3); }
 .hero__overlay--heavy { background: rgba(0,0,0,.45); }
 .hero__content { position: relative; padding: 140px 24px 80px; max-width: 1000px; }
 .hero__content h1 { margin-bottom: 36px; }
 .hero__content .pretitle { color: var(--white); }
 .hero__buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-.hero--grayscale .hero__media, .hero--grayscale .hero__video { filter: grayscale(1); }
+.hero--grayscale .hero__media, .hero--grayscale .hero__video, .hero--grayscale .hero__poster { filter: grayscale(1); }
 .hero__xmark { position: absolute; left: -4%; top: 10%; width: 36%; opacity: .12; pointer-events: none; }
 
 /* slide rotation on hero (vision / partnership) */
@@ -214,7 +215,7 @@ h5 { font-size: 15px; }
 
 /* ---------- reviews ---------- */
 .reviews { position: relative; color: var(--white); overflow: hidden; background: var(--ink); }
-.reviews__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); }
+.reviews__video, .reviews__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); }
 .reviews__overlay { position: absolute; inset: 0; background: rgba(0,0,0,.35); }
 .reviews .container { position: relative; }
 .reviews__title { text-align: center; margin-bottom: 48px; }
