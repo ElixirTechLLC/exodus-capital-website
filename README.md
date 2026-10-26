@@ -93,6 +93,17 @@ post wherever `forms` in `data/site.json` says:
   accepts a normal form POST: Formspree, Web3Forms, a Cloudflare Worker, or a
   **Salesforce Web-to-Lead** URL so leads land directly in the Exodus org.
 
+## Review copy on GitHub Pages
+
+The repo is https://github.com/ElixirTechLLC/exodus-capital-website and the
+site is served from the `docs/` folder at
+https://elixirtechllc.github.io/exodus-capital-website/ (links carry that
+sub-path, forms do not submit there). To update it after an edit:
+
+```bash
+cd website && python3 build.py --base /exodus-capital-website --out docs && git add -A && git commit -m "Update site" && git push
+```
+
 ## Hosting (free)
 
 1. Push the `website/` folder to a GitHub repository.
