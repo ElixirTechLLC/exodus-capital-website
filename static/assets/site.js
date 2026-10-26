@@ -4,11 +4,16 @@
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
 
-  /* ---- header: solid after scrolling past the hero ---- */
+  /* ---- header: solid after scrolling; slides away on scroll down, back on scroll up ---- */
   var header = $('.header');
+  var lastY = window.scrollY;
   function onScroll() {
     if (!header) return;
-    header.classList.toggle('is-solid', window.scrollY > 40);
+    var y = window.scrollY;
+    header.classList.toggle('is-solid', y > 40);
+    if (y > 120 && y > lastY + 2) header.classList.add('is-hidden');
+    else if (y < lastY - 2 || y <= 120) header.classList.remove('is-hidden');
+    lastY = y;
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
