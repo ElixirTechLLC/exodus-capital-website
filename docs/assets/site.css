@@ -111,8 +111,7 @@ h5 { font-size: 15px; }
   .hamburger { margin-left: 0; }
 }
 
-.topband { height: 170px; background: var(--ink); }
-@media (max-width: 900px) { .topband { height: 120px; } }
+.topband { height: calc(var(--header-h) + 12px); background: var(--ink); }
 
 /* ---------- side menu ---------- */
 .drawer { position: fixed; inset: 0; z-index: 60; visibility: hidden; }
