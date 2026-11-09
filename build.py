@@ -228,6 +228,7 @@ def footer():
       <p>%s<br>E: <a href="mailto:%s">%s</a><br>P: <a href="tel:%s">%s</a></p>
     </div>
     <div class="footer__bottom">
+      <div></div>
       <div>Copyright &copy; <span data-year>%d</span> | <a href="/terms-and-conditions/">Privacy Policy</a> | <a href="/sitemap/">Sitemap</a></div>
       <div class="footer__socials">%s</div>
     </div>
@@ -426,16 +427,20 @@ def stats_block(items, title="", bg=True, cols=None):
         ('<h2 class="stats__title">%s</h2>' % E(title)) if title else "", box_cls, cells)
 
 
-def logo_row(images, title="", dark=False, submarkets=False, marquee=False):
+def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=None):
+    """Row of logos. bg=<image> puts already-white logos over a darkened photo."""
     imgs = "".join('<img src="%s" alt="" loading="lazy">' % E(i) for i in images)
     if marquee:
         imgs += imgs  # duplicated so the loop is seamless
+    if bg:
+        tone, style = "logos--photo", ' style="background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(%s)"' % E(bg)
+    else:
+        tone, style = ("section--dark logos--invert" if dark else "section--light"), ""
     return '''
-<section class="section logos %s %s %s %s">
+<section class="section logos %s %s %s"%s>
   %s
   <div class="logos__track">%s</div>
-</section>''' % ("section--dark" if dark else "section--light", "logos--invert" if dark else "",
-                 "logos--submarkets" if submarkets else "", "logos--marquee" if marquee else "",
+</section>''' % (tone, "logos--submarkets" if submarkets else "", "logos--marquee" if marquee else "", style,
                  ('<h2 class="logos__title">%s</h2>' % E(title)) if title else "", imgs)
 
 
@@ -544,7 +549,7 @@ def page_team():
     body += '<section class="section section--dark"><div class="container"><h2 class="section__title">%s</h2><div class="team-grid">%s</div></div></section>' % (E(t["grid_title"]), members)
     body += '<section class="section section--light"><div class="container"><h2 class="section__title">%s</h2><p class="section__sub">%s</p>%s</div></section>' % (
         E(t["track_title"]), E(t["track_text"]), stats_block(t["stats"], bg=False).replace('class="stats stats--plain"', 'class="stats stats--plain" style="padding:0"'))
-    body += logo_row(assets["press"], title=t["press_title"], marquee=True)
+    body += logo_row(assets["press_white"], title=t["press_title"], marquee=True, bg=assets["featured_bg"])
     body += property_carousel(t["notable_title"], sold[:12], show_mark=False)
     body += reviews_section(t["reviews_title"])
     body += follow_strip()
@@ -724,8 +729,10 @@ def page_blog_post(p):
 
 def page_careers():
     c = site["careers"]
-    hero_inner = '<span class="pretitle">%s</span><h1>%s</h1>' % (E(c["hero_pretitle"]), E(c["hero_title"]))
-    body = hero_video("hero-home", hero_inner, overlay="hero__overlay hero__overlay--heavy")
+    hero_inner = '<h1>%s</h1><p class="hero__sub">%s</p><div class="hero__socials">%s</div>' % (
+        E(c["hero_title"]), "<br>".join(E(x) for x in c["hero_subtitle"]),
+        social_links({"instagram": site["social"]["instagram"], "linkedin": site["social"]["linkedin"]}))
+    body = hero_video("hero-home", hero_inner, overlay="hero__overlay hero__overlay--light", extra="hero--left")
     body += '<section class="section section--dark intro intro--light"><div class="container"><img class="intro__mark" src="%s" alt=""><h2>%s</h2><p class="intro__text">%s</p></div></section>' % (E(assets["x_mark"]), E(c["who_title"]), E(c["who_text"]))
     roles = "".join("<option>%s</option>" % E(r) for r in c["apply_roles"])
     body += '''
@@ -744,7 +751,7 @@ def page_careers():
     </div>
   </div>
 </section>''' % (E(c["apply_title"]), E(c["apply_text"]), form_open("careers"), roles, consent("careers-consent"))
-    body += logo_row(assets["press"], title=c["press_title"], marquee=True)
+    body += logo_row(assets["press"], title=c["press_title"], marquee=True, dark=True)
     body += stats_block(c["stats"], title=c["stats_title"])
     fs = c["founder_social"]
     body += '''

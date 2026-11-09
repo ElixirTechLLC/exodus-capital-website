@@ -80,5 +80,15 @@
       "video": "/media/hero-partnership.mp4",
       "poster": "/media/hero-partnership.jpg"
     }
-  }
+  },
+  "press_white": [
+    "/media/agbsremdlkbyb5xcvsn8.webp",
+    "/media/gpnqfivxzjgwq6xyqh1j.webp",
+    "/media/mt9egr6sbovbry9uqqe8.webp",
+    "/media/uqm6wliqgxl7o3yb8fsw.webp",
+    "/media/ct9vd73fzfsek6nesptr.webp",
+    "/media/v2zawjwgmzfw0fkaeyog.webp",
+    "/media/f4he6uubw9hhcwetw1si.webp"
+  ],
+  "featured_bg": "/media/yac4h1pdhrzg1w4npnuo.jpg"
 }

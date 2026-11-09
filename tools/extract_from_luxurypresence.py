@@ -275,6 +275,8 @@ SITE_ASSETS = {
     "x_mark": "87715065-3533-4a55-bf49-305fc2cca4d1",
     "press": ["krzikvyes5egtvuxugim", "ewlu9bqhzushhalfv0gh", "itk4zafdkyhw62uyoako", "clynm0totmrk8poh4w7o",
               "fkfmrnpc45olimozjaj2", "t0gncin7jpjfwvxj2mme", "ahon893al3alkfh1sorg"],
+    "press_white": ["agbsremdlkbyb5xcvsn8", "gpnqfivxzjgwq6xyqh1j", "mt9egr6sbovbry9uqqe8", "uqm6wliqgxl7o3yb8fsw", "ct9vd73fzfsek6nesptr", "v2zawjwgmzfw0fkaeyog", "f4he6uubw9hhcwetw1si"],   # white versions used over the photo on the Team page
+    "featured_bg": "yac4h1pdhrzg1w4npnuo",
     "submarkets": ["qogqtlhwfznnsmm1wgpv", "jprotg4f15vkc4bzy2xc", "dh4ybr0j7boqleimpths", "yrdnruhavnubk6zr6t0y",
                    "tjownvy8z1o6jnpqv1u6", "q4mixsek2yklsn7b31ey", "ojaiwl26ffuqkuwrkcaw", "vfbp7qzqrxdu7kio9nie",
                    "rsrffwb0xbbm1vfzzobj", "n5t5kpy082hrv8zpgcxg", "zwuzjunptdldzmpnlpwk", "k3n3webc9bor6qznlm1w",
