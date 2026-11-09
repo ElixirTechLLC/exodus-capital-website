@@ -168,7 +168,7 @@ h5 { font-size: 17px; }
 .logos--marquee:hover .logos__track { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 .logos__title { text-align: center; margin-bottom: 40px; }
-.logos--submarkets img { width: 150px; }
+.logos--submarkets img { width: 199px; }
 
 /* ---------- stats ---------- */
 .stats { position: relative; background-size: cover; background-position: center; color: var(--white); padding: 132px 0; letter-spacing: normal; }
@@ -647,3 +647,22 @@ h5 { font-size: 17px; }
   .tsplit__nav { justify-content: flex-start; }
   .tsplit__right { border-left: 0; padding-left: 0; }
 }
+
+/* ============================================================
+   Track record: three across, nine per page with a pager
+   ============================================================ */
+[hidden] { display: none !important; }
+.logos--marquee.logos--submarkets .logos__track img { padding: 0 25px; }      /* 199 + 50 + 1px line = the original's 250px pitch */
+.section.logos.logos--top { padding: 96px 0 0; }
+.section.track { padding: 60px 0 0; }
+.track .grid--3 { gap: 55px 40px; }
+.track .card__body { min-height: 185px; }          /* card = 500px tall, as on the original */
+.pager { display: flex; justify-content: center; align-items: center; margin-top: 60px; }
+.pager button { min-width: 48px; height: 48px; padding: 0 14px; font-size: 17px; font-weight: 700; letter-spacing: normal; color: var(--black); border: 2px solid transparent; display: inline-flex; align-items: center; justify-content: center; }
+.pager button:hover:not([disabled]):not(.is-current) { border-color: var(--black); }
+.pager button.is-current { background: var(--black); color: var(--white); border-color: var(--black); }
+.pager button[disabled] { opacity: .35; cursor: default; }
+.pager button svg { width: 16px; height: 16px; }
+.pager .pager__gap { min-width: 48px; text-align: center; font-size: 17px; font-weight: 700; }
+@media (max-width: 1000px) { .track .grid--3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .track .grid--3 { grid-template-columns: 1fr; } .logos--submarkets img { width: 150px; } }

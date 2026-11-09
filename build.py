@@ -453,7 +453,7 @@ def stats_block(items, title="", bg=True, cols=None, solid=False):
         ('<h2 class="stats__title">%s</h2>' % E(title)) if title else "", box_cls, cells)
 
 
-def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=None, darken=False):
+def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=None, darken=False, cls=""):
     """Row of logos. bg=<image> puts already-white logos over a darkened photo."""
     imgs = "".join('<img src="%s" alt="" loading="lazy">' % E(i) for i in images)
     if marquee:
@@ -464,10 +464,10 @@ def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=N
         # the press logos are white artwork: keep them white on black, turn them black on white
         tone, style = ("section--dark logos--invert" if dark else "section--light" + (" logos--darken" if darken else "")), ""
     return '''
-<section class="section logos %s %s %s"%s>
+<section class="section logos %s %s %s %s"%s>
   %s
   <div class="logos__track">%s</div>
-</section>''' % (tone, "logos--submarkets" if submarkets else "", "logos--marquee" if marquee else "", style,
+</section>''' % (tone, "logos--submarkets" if submarkets else "", "logos--marquee" if marquee else "", cls, style,
                  ('<h2 class="logos__title">%s</h2>' % E(title)) if title else "", imgs)
 
 
@@ -497,6 +497,10 @@ def reviews_section(title):
 
 
 def follow_strip(label="Follow Us"):
+    # The original site's Instagram block renders empty, so this strip is off by
+    # default. Set "show_follow_strip": true in data/site.json to bring it back.
+    if not site.get("show_follow_strip"):
+        return ""
     handle = site["social"]["instagram"].rstrip("/").rsplit("/", 1)[-1]
     return '''
 <section class="follow section--dark">
@@ -632,9 +636,12 @@ def page_listings():
 
 
 def page_track_record():
-    top = TOPBAND + logo_row(assets["submarkets"], title=site["home"]["submarkets_title"], submarkets=True, marquee=True)
+    # black band, submarkets strip, then closed deals three across, nine per page
+    # (the pager is added by site.js from data-paginate; without JS every deal shows)
+    top = TOPBAND + logo_row(assets["submarkets"], title=site["home"]["submarkets_title"], submarkets=True, marquee=True, cls="logos--top")
     cards = "".join(property_card(p) for p in sold)
-    body = top + '<section class="section section--light" style="padding-top:0"><div class="container"><h1 class="sr-only">Track Record</h1><div class="grid grid--2">%s</div></div></section>' % cards
+    body = top + '<section class="section section--light track"><div class="container"><h1 class="sr-only">Track Record</h1><div class="grid grid--3" data-paginate="%d">%s</div></div></section>' % (
+        int(site.get("track_record_per_page", 9)), cards)
     body += follow_strip() + cta_grid()
     return layout("Track Record | New York Investment Firm | Exodus Capital", "Closed investment sales by Exodus Capital across New York, New Jersey, Connecticut and beyond.", body, "/properties/track-record/")
 

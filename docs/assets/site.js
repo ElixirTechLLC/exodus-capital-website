@@ -203,6 +203,56 @@
     } else load();
   });
 
+  /* ---- pager: show N cards at a time (data-paginate="9"), keep ?page=N in the URL ---- */
+  $$('[data-paginate]').forEach(function (grid) {
+    var per = parseInt(grid.getAttribute('data-paginate'), 10) || 9;
+    var items = Array.prototype.slice.call(grid.children);
+    var pages = Math.ceil(items.length / per);
+    if (pages < 2) return;
+    var pager = document.createElement('nav');
+    pager.className = 'pager';
+    pager.setAttribute('aria-label', 'Pagination');
+    grid.parentNode.insertBefore(pager, grid.nextSibling);
+    var arrow = function (d) { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="' + (d < 0 ? 'M15 5l-7 7 7 7' : 'M9 5l7 7-7 7') + '"/></svg>'; };
+    var cur = 1;
+    try { cur = Math.min(pages, Math.max(1, parseInt(new URLSearchParams(location.search).get('page'), 10) || 1)); } catch (e) {}
+    function btn(html, page, opts) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.innerHTML = html;
+      if (opts && opts.label) b.setAttribute('aria-label', opts.label);
+      if (opts && opts.current) { b.className = 'is-current'; b.setAttribute('aria-current', 'page'); }
+      if (opts && opts.disabled) b.disabled = true;
+      else b.addEventListener('click', function () { go(page, true); });
+      pager.appendChild(b);
+    }
+    function render() {
+      items.forEach(function (el, i) { el.hidden = Math.floor(i / per) + 1 !== cur; });
+      pager.innerHTML = '';
+      btn(arrow(-1), cur - 1, { label: 'Previous page', disabled: cur === 1 });
+      var show = {}, n;
+      [1, 2, pages, cur - 1, cur, cur + 1].forEach(function (p) { if (p >= 1 && p <= pages) show[p] = true; });
+      var last = 0;
+      for (n = 1; n <= pages; n++) {
+        if (!show[n]) continue;
+        if (n - last > 1) { var gap = document.createElement('span'); gap.className = 'pager__gap'; gap.textContent = '…'; pager.appendChild(gap); }
+        btn(String(n), n, { current: n === cur, label: 'Page ' + n });
+        last = n;
+      }
+      btn(arrow(1), cur + 1, { label: 'Next page', disabled: cur === pages });
+    }
+    function go(page, scroll) {
+      cur = Math.min(pages, Math.max(1, page));
+      render();
+      try {
+        var u = new URL(location.href);
+        if (cur === 1) { u.search = ''; } else { u.searchParams.set('page', cur); }
+        history.replaceState(null, '', u);
+      } catch (e) {}
+      if (scroll) window.scrollTo({ top: grid.getBoundingClientRect().top + window.scrollY - 130, behavior: 'smooth' });
+    }
+    render();
+  });
+
   /* ---- footer year ---- */
   $$('[data-year]').forEach(function (y) { y.textContent = new Date().getFullYear(); });
 })();

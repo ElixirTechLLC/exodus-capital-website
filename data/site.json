@@ -437,5 +437,7 @@
     "left_button": "Contact Us",
     "right_title": "Receive Market Updates",
     "right_button": "Register Now"
-  }
+  },
+  "show_follow_strip": false,
+  "track_record_per_page": 9
 }
