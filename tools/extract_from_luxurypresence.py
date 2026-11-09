@@ -383,6 +383,11 @@ def main():
         names = dict(ex.map(download_one, sorted(needed)))
     print("downloading videos...")
     assets["videos"] = download_videos()
+    # stock photo beside the careers "Apply Now" form (Unsplash, not hosted by Luxury Presence)
+    apply_img = MEDIA / "careers-apply.jpg"
+    if not apply_img.exists():
+        subprocess.run(["curl", "-sL", "-A", "Mozilla/5.0", "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=78&w=1100&fm=jpg", "-o", str(apply_img)], check=True)
+    assets["careers_apply"] = "/media/careers-apply.jpg"
 
     def resolve(obj):
         s = json.dumps(obj, indent=2, ensure_ascii=False)

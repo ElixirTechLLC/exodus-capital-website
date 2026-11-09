@@ -417,9 +417,35 @@ def property_carousel(title, items, dark=False, show_mark=True, view_all="/prope
                  E(title), cards, "btn--light" if dark else "btn--dark", E(view_all))
 
 
-def stats_block(items, title="", bg=True, cols=None):
+def property_slider(title, items, tab="For Sale", view_all="/listings/"):
+    """Careers-style slider: photo, small status tag, price, location, side arrows."""
+    cards = "".join('''
+<a class="pcard" href="/properties/%s/">
+  <div class="pcard__img"><img src="%s" alt="%s" loading="lazy"><span class="pcard__status">%s</span></div>
+  <div class="pcard__price">%s</div>
+  <div class="pcard__addr">%s</div>
+</a>''' % (E(p["slug"]), E(p["images"][0]["src"]), E(p["images"][0]["alt"] or p["title"]), E(p["status"]), E(p["price"]), E(p["location"])) for p in items if p["images"])
+    return '''
+<section class="section section--light pslider">
+  <div class="container" data-carousel>
+    <h2 class="section__title">%s</h2>
+    <div class="pslider__tab"><span>%s</span></div>
+    <div class="pslider__row">
+      <button class="arrow-btn" data-prev aria-label="Previous">%s</button>
+      <div class="pslider__track" data-track>%s</div>
+      <button class="arrow-btn" data-next aria-label="Next">%s</button>
+    </div>
+    <div class="carousel__foot"><a class="btn btn--dark" href="%s">View All</a></div>
+  </div>
+</section>''' % (E(title), E(tab), icon("left"), cards, icon("right"), E(view_all))
+
+
+def stats_block(items, title="", bg=True, cols=None, solid=False):
     cells = "".join('<div><div class="stats__value" data-count="%s">%s</div><div class="stats__label">%s</div></div>' % (E(s["value"]), E(s["value"]), E(s["label"])) for s in items)
     box_cls = "stats__box" + (" stats__box--5" if (cols or len(items)) == 5 else "")
+    if solid:   # plain black band, boxed stats with divider lines (careers page)
+        return '<section class="stats stats--solid"><div class="container">%s<div class="%s">%s</div></div></section>' % (
+            ('<h2 class="stats__title">%s</h2>' % E(title)) if title else "", box_cls, cells)
     if bg:
         return '<section class="stats" style="background-image:url(%s)"><div class="container">%s<div class="%s">%s</div></div></section>' % (
             E(assets["stats_bg"]), ('<h2 class="stats__title">%s</h2>' % E(title)) if title else "", box_cls, cells)
@@ -427,7 +453,7 @@ def stats_block(items, title="", bg=True, cols=None):
         ('<h2 class="stats__title">%s</h2>' % E(title)) if title else "", box_cls, cells)
 
 
-def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=None):
+def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=None, darken=False):
     """Row of logos. bg=<image> puts already-white logos over a darkened photo."""
     imgs = "".join('<img src="%s" alt="" loading="lazy">' % E(i) for i in images)
     if marquee:
@@ -435,7 +461,8 @@ def logo_row(images, title="", dark=False, submarkets=False, marquee=False, bg=N
     if bg:
         tone, style = "logos--photo", ' style="background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(%s)"' % E(bg)
     else:
-        tone, style = ("section--dark logos--invert" if dark else "section--light"), ""
+        # the press logos are white artwork: keep them white on black, turn them black on white
+        tone, style = ("section--dark logos--invert" if dark else "section--light" + (" logos--darken" if darken else "")), ""
     return '''
 <section class="section logos %s %s %s"%s>
   %s
@@ -733,75 +760,95 @@ def page_careers():
         E(c["hero_title"]), "<br>".join(E(x) for x in c["hero_subtitle"]),
         social_links({"instagram": site["social"]["instagram"], "linkedin": site["social"]["linkedin"]}))
     body = hero_video("hero-home", hero_inner, overlay="hero__overlay hero__overlay--light", extra="hero--left")
-    body += '<section class="section section--dark intro intro--light"><div class="container"><img class="intro__mark" src="%s" alt=""><h2>%s</h2><p class="intro__text">%s</p></div></section>' % (E(assets["x_mark"]), E(c["who_title"]), E(c["who_text"]))
+
+    # who we are
+    body += '<section class="section section--dark intro intro--light intro--lead"><div class="container"><img class="intro__mark" src="%s" alt=""><h2>%s</h2><p class="intro__text">%s</p></div></section>' % (E(assets["x_mark"]), E(c["who_title"]), E(c["who_text"]))
+
+    # apply now: heading, then photo beside the form
     roles = "".join("<option>%s</option>" % E(r) for r in c["apply_roles"])
     body += '''
-<section class="section section--light" id="apply">
-  <div class="container">
-    <div class="split">
-      <div><h2>%s</h2><p style="margin-top:20px;color:var(--gray)">%s</p></div>
+<section class="section section--light apply" id="apply">
+  <div class="container apply__container">
+    <div class="apply__header"><h2>%s</h2><p>%s</p></div>
+    <div class="apply__row">
+      <div class="apply__img" style="background-image:url(%s)"></div>
       <div>%s
-        <input type="text" name="name" placeholder="Full Name *" required aria-label="Full name">
-        <div class="form__row"><input type="email" name="email" placeholder="Email *" required aria-label="Email"><input type="tel" name="phone" placeholder="Phone" aria-label="Phone"></div>
+        <div class="form__row"><input type="text" name="name" placeholder="Full Name *" required aria-label="Full name"><input type="tel" name="phone" placeholder="Phone" aria-label="Phone"></div>
+        <input type="email" name="email" placeholder="Email *" required aria-label="Email">
         <select name="interest" required aria-label="What are you interested in?"><option value="" disabled selected>What are you interested in?</option>%s</select>
         %s
-        <div><button class="btn btn--solid-dark" type="submit">Submit</button></div>
+        <div><button class="btn btn--dark" type="submit">Submit</button></div>
         <p class="form__status" aria-live="polite"></p>
       </form></div>
     </div>
   </div>
-</section>''' % (E(c["apply_title"]), E(c["apply_text"]), form_open("careers"), roles, consent("careers-consent"))
-    body += logo_row(assets["press"], title=c["press_title"], marquee=True, dark=True)
-    body += stats_block(c["stats"], title=c["stats_title"])
-    fs = c["founder_social"]
+</section>''' % (E(c["apply_title"]), E(c["apply_text"]), E(assets["careers_apply"]), form_open("careers", "form form--line"), roles, consent("careers-consent"))
+
+    body += logo_row(assets["press"], title=c["press_title"], marquee=True, darken=True)
+    body += stats_block(c["stats"], title=c["stats_title"], solid=True)
+
+    # founder: text left, wide video poster right
     body += '''
 <section class="section section--light">
   <div class="container">
-    <div class="split">
+    <div class="founder">
       <div>
         <h2>%s</h2>
-        <h3 style="margin:16px 0 24px">%s</h3>
-        <div class="follow__links" style="justify-content:flex-start">%s</div>
+        <h3>%s</h3>
+        <div class="follow__links">%s</div>
       </div>
       <div class="video-poster" style="background-image:url(%s)">
         <button class="play-btn" data-video="https://www.youtube.com/embed/%s?autoplay=1" aria-label="Play video">%s</button>
       </div>
     </div>
   </div>
-</section>''' % (E(c["founder_title"]), E(c["founder_name"]), social_links(fs), E(assets["founder_poster"]), E(c["founder_youtube_id"]), icon("play"))
-    items = "".join("<li><div><strong>%s</strong>%s</div></li>" % (E(i["title"]), E(i["text"])) for i in c["apart_items"])
+</section>''' % (E(c["founder_title"]), E(c["founder_name"]), social_links(c["founder_social"]), E(assets["founder_poster"]), E(c["founder_youtube_id"]), icon("play"))
+
+    # what sets us apart: charcoal band, text left, photo right
+    items = "".join("<li><p><strong>%s</strong> %s</p></li>" % (E(i["title"]), E(i["text"])) for i in c["apart_items"])
     body += '''
-<section class="section section--dark">
+<section class="section section--charcoal">
   <div class="container">
-    <div class="split split--reverse">
-      <div><img src="%s" alt="Exodus Capital team" loading="lazy"></div>
-      <div><h2 style="margin-bottom:28px">%s</h2><ul class="checklist">%s</ul><a class="btn btn--light" href="#apply">%s</a></div>
+    <div class="apart">
+      <div class="apart__text"><h2>%s</h2><ul class="checklist">%s</ul><a class="btn btn--accent" href="#apply">%s</a></div>
+      <div class="apart__img"><img src="%s" alt="Exodus Capital team" loading="lazy"></div>
     </div>
   </div>
-</section>''' % (E(assets["careers_team"]), E(c["apart_title"]), items, E(c["apart_button"]))
-    if listings:
-        body += property_carousel(c["featured_title"], listings, show_mark=False, view_all="/listings/", autoplay=0)
+</section>''' % (E(c["apart_title"]), items, E(c["apart_button"]), E(assets["careers_team"]))
+
+    for_sale = [p for p in listings if p["status"] == "For Sale"]
+    if for_sale:
+        body += property_slider(c["featured_title"], for_sale)
+
     cu = assets["careers_culture"]
     body += '''
 <section class="culture">
+  <div class="culture__img"><img src="%s" alt="" loading="lazy"></div>
   <div class="culture__tile"><h4>%s</h4><a class="btn btn--light" href="%s">%s</a></div>
   <div class="culture__img"><img src="%s" alt="" loading="lazy"></div>
-  <div class="culture__img"><img src="%s" alt="" loading="lazy"></div>
-</section>''' % (E(c["culture_title"]), E(c["culture_button"]["href"]), E(c["culture_button"]["label"]), E(cu[0]), E(cu[1]))
-    quotes = "".join('<div class="review-slide %s" data-slide><p class="quote-slider__text">%s</p><div class="quote-slider__name">&mdash; %s</div></div>' % (
-        "is-active" if i == 0 else "", E(t["quote"][:650].rsplit(" ", 1)[0] + ("..." if len(t["quote"]) > 650 else "")), E(t["name"])) for i, t in enumerate(testimonials))
+</section>''' % (E(cu[0]), E(c["culture_title"]), E(c["culture_button"]["href"]), E(c["culture_button"]["label"]), E(cu[1]))
+
+    # testimonials: title and prev/next on the left, quote on the right
+    def clip(q, n=470):
+        return q if len(q) <= n else q[:n].rsplit(" ", 1)[0] + "..."
+    quotes = "".join('<div class="review-slide %s" data-slide><blockquote>%s</blockquote><cite>&mdash; %s</cite></div>' % (
+        "is-active" if i == 0 else "", E(clip(t["quote"])), E(t["name"])) for i, t in enumerate(testimonials))
     body += '''
-<section class="section section--light">
+<section class="section--light tsplit-wrap">
   <div class="container">
-    <h2 class="section__title">%s</h2>
-    <div class="quote-slider" data-slides="8000">
-      %s
-      <div class="reviews__nav" style="color:var(--black)"><button class="arrow-btn" data-prev aria-label="Previous">%s</button><button class="arrow-btn" data-next aria-label="Next">%s</button></div>
-      <p style="margin-top:36px"><a class="btn btn--dark" href="/testimonials/">View All Testimonials</a></p>
+    <div class="tsplit" data-slides="0">
+      <div class="tsplit__left">
+        <h2>%s</h2>
+        <div class="tsplit__nav"><button class="link-caps" data-prev>previous</button><span class="sep"></span><button class="link-caps" data-next>next</button></div>
+      </div>
+      <div class="tsplit__right">
+        %s
+        <p><a class="btn btn--accent-outline" href="/testimonials/">View All Testimonials</a></p>
+      </div>
     </div>
   </div>
-</section>''' % (E(c["testimonials_title"]), quotes, icon("left"), icon("right"))
-    body += follow_strip("Follow Us on Instagram")
+</section>''' % (E(c["testimonials_title"]), quotes)
+
     body += cta_grid(left_title=c["cta_title"])
     return layout("Careers | New York Investment Firm | Exodus Capital", "Join Exodus Capital, a growing Tri-State investment sales brokerage.", body, "/careers/")
 
